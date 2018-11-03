@@ -15,7 +15,7 @@ mongoose.connect('mongodb://bagz:secretpassword123@localhost/merndb')
 //mongoose.connect('mongodb://localhost/merndb',  {user:'bagz', password:'secretpassword123', { auth:{authdb:'admin'}}
 //promiseLibrary: require('bluebird')})
   .then(() =>  console.log('connection succesful'))
-  .catch((err) => console.error(err)));
+  .catch((err) => console.error(err));
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
