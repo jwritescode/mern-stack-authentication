@@ -10,8 +10,7 @@ var app = express();
 
 var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
-//mongoose.connect('mongodb://bagz:secretpassword123@127.0.0.1:27017/merndb', { promiseLibrary: require('bluebird') })
-mongoose.connect('mongodb://127.0.0.1:27017/?3t.connectTimeout=10000&3t.connection.name=server-merndb&3t.connectionMode=direct&3t.proxyType=default&3t.proxyHost=&3t.proxyPort=&readPreference=primary&3t.proxyProtocol=&3t.sshAddress=18.225.14.187&3t.sshUser=bagz&3t.sshPKPath=/home/bagz/johnwritescodeputty.ppk&3t.ssh=true&3t.sshUsePKPassphrase=false&3t.uriVersion=3&3t.sshAuthMode=privateKey&3t.socketTimeout=0&3t.sshPort=22', { promiseLibrary: require('bluebird') })
+mongoose.connect('mongodb://bagz:secretpassword123@127.0.0.1:27017/merndb', { promiseLibrary: require('bluebird') })
   .then(() =>  console.log('connection succesful'))
   .catch((err) => console.error(err));
 
