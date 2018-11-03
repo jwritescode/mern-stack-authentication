@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 var book = require('./routes/book');
 var auth = require('./routes/auth');
 var app = express();
-const database = require('../config/database');
+const database = require('./config/database');
 
 var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
