@@ -27,5 +27,17 @@
   },
   "devDependencies": {
     "bootstrap": "^4.0.0"
-  }
+  },
+  "description": "This source code is part of [Securing MERN Stack Web Application using Passport](https://www.djamware.com/post/5a90c37980aca7059c14297a/securing-mern-stack-web-application-using-passport) tutorial.",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwritescode/mern-stack-authentication.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jwritescode/mern-stack-authentication/issues"
+  },
+  "homepage": "https://github.com/jwritescode/mern-stack-authentication#readme"
 }
