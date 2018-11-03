@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 var book = require('./routes/book');
 var auth = require('./routes/auth');
 var app = express();
-const database = require('config/database');
+const database = require('./config/database');
 const isDev = process.env.NODE_ENV !== 'production';
 
 var mongoose = require('mongoose');
