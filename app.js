@@ -7,11 +7,11 @@ var bodyParser = require('body-parser');
 var book = require('./routes/book');
 var auth = require('./routes/auth');
 var app = express();
-const Database = require('./config/database');
+// const Database = require('./config/database');
 
 var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
-mongoose.connect('Database.db', {auth:{authdb: "admin"}, promiseLibrary: require('bluebird') })
+mongoose.connect('mongodb://bagz:secretpassword123@localhost:27017/merndb', {auth:{authdb: "admin"}, promiseLibrary: require('bluebird') })
   .then(() =>  console.log('connection succesful'))
   .catch((err) => console.error(err));
 
