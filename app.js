@@ -10,7 +10,7 @@ var app = express();
 
 var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
-mongoose.connect('mongodb://bagz:secretpassword123@localhost:27017/merndb', { promiseLibrary: require('bluebird') })
+mongoose.connect('mongodb://bagz:secretpassword123@localhost:27017/merndb', {auth:{authdb: "admin"}}{ promiseLibrary: require('bluebird') })
   .then(() =>  console.log('connection succesful'))
   .catch((err) => console.error(err));
 
