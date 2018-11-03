@@ -11,7 +11,7 @@ const database = require('./config/database');
 
 var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
-mongoose.connect('isDev ? database.db_dev : database.db', {auth:{authdb: "admin"}, promiseLibrary: require('bluebird') })
+mongoose.connect('database.db', {auth:{authdb: "admin"}, promiseLibrary: require('bluebird') })
   .then(() =>  console.log('connection succesful'))
   .catch((err) => console.error(err));
 
